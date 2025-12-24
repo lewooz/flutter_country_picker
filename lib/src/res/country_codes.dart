@@ -539,6 +539,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "673",
@@ -979,6 +980,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 7,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "# ####-####",
   },
   {
     "e164_cc": "357",
@@ -1216,6 +1218,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "#### ####",
   },
   {
     "e164_cc": "251",
@@ -2131,6 +2134,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "##-#######",
   },
   {
     "e164_cc": "423",
@@ -2198,6 +2202,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "#### ####",
   },
   {
     "e164_cc": "389",
@@ -2214,6 +2219,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "## ### ###",
   },
   {
     "e164_cc": "261",
@@ -2791,6 +2797,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "47",
@@ -2824,6 +2831,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "#### ####",
   },
   {
     "e164_cc": "92",
@@ -2857,6 +2865,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 7,
     "phone_max_length": 7,
     "starting_digits": [],
+    "phone_format": "###-####",
   },
   {
     "e164_cc": "970",
@@ -2890,6 +2899,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "####-####",
   },
   {
     "e164_cc": "675",
@@ -2923,6 +2933,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "### ######",
   },
   {
     "e164_cc": "51",
@@ -2956,6 +2967,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "### ### ####",
   },
   {
     "e164_cc": "48",
@@ -2972,6 +2984,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "### ### ###",
   },
   {
     "e164_cc": "351",
@@ -2988,6 +3001,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "1787",
@@ -3004,6 +3018,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "974",
@@ -3020,6 +3035,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "#### ####",
   },
   {
     "e164_cc": "262",
@@ -3036,6 +3052,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "#### ## ## ##",
   },
   {
     "e164_cc": "40",
@@ -3052,6 +3069,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "7",
@@ -3068,6 +3086,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "### ###-##-##",
   },
   {
     "e164_cc": "250",
@@ -3101,6 +3120,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "#### ## ## ##",
   },
   {
     "e164_cc": "290",
@@ -3134,6 +3154,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "1758",
@@ -3150,6 +3171,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "590",
@@ -3166,6 +3188,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "#### ## ## ##",
   },
   {
     "e164_cc": "508",
@@ -3182,6 +3205,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 6,
     "phone_max_length": 6,
     "starting_digits": [],
+    "phone_format": "## ## ##",
   },
   {
     "e164_cc": "1784",
@@ -3198,6 +3222,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "685",
@@ -3248,6 +3273,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 7,
     "phone_max_length": 7,
     "starting_digits": [],
+    "phone_format": "### ####",
   },
   {
     "e164_cc": "966",
@@ -3264,6 +3290,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": ["5"],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "221",
@@ -3314,6 +3341,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 7,
     "phone_max_length": 7,
     "starting_digits": [],
+    "phone_format": "# ### ###",
   },
   {
     "e164_cc": "232",
@@ -3347,6 +3375,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "#### ####",
   },
   {
     "e164_cc": "1721",
@@ -3363,6 +3392,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "421",
@@ -3379,6 +3409,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "### ### ###",
   },
   {
     "e164_cc": "386",
@@ -3395,6 +3426,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "## ### ###",
   },
   {
     "e164_cc": "677",
@@ -3411,6 +3443,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 7,
     "phone_max_length": 7,
     "starting_digits": [],
+    "phone_format": "### ####",
   },
   {
     "e164_cc": "252",
@@ -3444,6 +3477,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "500",
@@ -3477,6 +3511,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "##-####-####",
   },
   {
     "e164_cc": "211",
@@ -3509,6 +3544,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": ["6", "7"],
+    "phone_format": "### ### ###",
   },
   {
     "e164_cc": "94",
@@ -3525,6 +3561,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "249",
@@ -3541,6 +3578,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "597",
@@ -3591,6 +3629,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "##-### ## ##",
   },
   {
     "e164_cc": "41",
@@ -3709,6 +3748,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "## ## ## ##",
   },
   {
     "e164_cc": "690",
@@ -3759,6 +3799,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "216",
@@ -3826,6 +3867,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "688",
@@ -3859,6 +3901,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "256",
@@ -3875,6 +3918,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "### ######",
   },
   {
     "e164_cc": "380",
@@ -3891,6 +3935,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ## ##",
   },
   {
     "e164_cc": "971",
@@ -3907,6 +3952,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": ["5"],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "44",
@@ -3923,6 +3969,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": ["7"],
+    "phone_format": "#### ### ####",
   },
   {
     "e164_cc": "1",
@@ -3939,6 +3986,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 10,
     "phone_max_length": 10,
     "starting_digits": [],
+    "phone_format": "(###) ###-####",
   },
   {
     "e164_cc": "598",
@@ -3955,6 +4003,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 8,
     "phone_max_length": 8,
     "starting_digits": [],
+    "phone_format": "## ### ###",
   },
   {
     "e164_cc": "998",
@@ -3988,6 +4037,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 7,
     "phone_max_length": 7,
     "starting_digits": [],
+    "phone_format": "### ####",
   },
   {
     "e164_cc": "379",
@@ -4038,6 +4088,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "681",
@@ -4104,6 +4155,7 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ####",
   },
   {
     "e164_cc": "263",
@@ -4120,5 +4172,6 @@ final List<Map<String, dynamic>> countryCodes = [
     "phone_min_length": 9,
     "phone_max_length": 9,
     "starting_digits": [],
+    "phone_format": "## ### ####",
   }
 ];
