@@ -18,6 +18,9 @@ class Country {
     displayName: 'World Wide (WW)',
     displayNameNoCountryCode: 'World Wide',
     e164Key: '',
+    phoneMinLength: 0,
+    phoneMaxLength: 0,
+    startingDigits: [],
   );
 
   ///The country phone code
@@ -49,6 +52,18 @@ class Country {
   final String displayNameNoCountryCode;
   final String e164Key;
 
+  ///The minimum length of a phone number for this country
+  final int phoneMinLength;
+
+  ///The maximum length of a phone number for this country
+  final int phoneMaxLength;
+
+  ///The starting digits that phone numbers in this country typically begin with
+  final List<String> startingDigits;
+
+  ///The format pattern for phone numbers (e.g., "### ### ###")
+  final String? phoneFormat;
+
   @Deprecated(
     'The modern term is displayNameNoCountryCode. '
     'This feature was deprecated after v1.0.6.',
@@ -73,6 +88,10 @@ class Country {
     required this.displayNameNoCountryCode,
     required this.e164Key,
     this.fullExampleWithPlusSign,
+    required this.phoneMinLength,
+    required this.phoneMaxLength,
+    required this.startingDigits,
+    this.phoneFormat,
   });
 
   Country.from({required Map<String, dynamic> json})
@@ -86,7 +105,11 @@ class Country {
         displayName = json['display_name'] as String,
         fullExampleWithPlusSign = json['full_example_with_plus_sign'] as String?,
         displayNameNoCountryCode = json['display_name_no_e164_cc'] as String,
-        e164Key = json['e164_key'] as String;
+        e164Key = json['e164_key'] as String,
+        phoneMinLength = json['phone_min_length'] as int,
+        phoneMaxLength = json['phone_max_length'] as int,
+        startingDigits = (json['starting_digits'] as List<dynamic>).cast<String>(),
+        phoneFormat = json['phone_format'] as String?;
 
   static Country parse(String country) {
     if (country == worldWide.countryCode) {
@@ -117,6 +140,10 @@ class Country {
     data['full_example_with_plus_sign'] = fullExampleWithPlusSign;
     data['display_name_no_e164_cc'] = displayNameNoCountryCode;
     data['e164_key'] = e164Key;
+    data['phone_min_length'] = phoneMinLength;
+    data['phone_max_length'] = phoneMaxLength;
+    data['starting_digits'] = startingDigits;
+    data['phone_format'] = phoneFormat;
     return data;
   }
 
@@ -152,9 +179,24 @@ class Country {
   @override
   int get hashCode => countryCode.hashCode;
 
-  /// provides country flag as emoji.
-  /// Can be displayed using
-  ///
-  ///```Text(country.flagEmoji)```
-  String get flagEmoji => Utils.countryCodeToEmoji(countryCode);
+
+  bool validatePhoneNumber(String phoneNumber) {
+    final int length = phoneNumber.length;
+    final bool lengthValid =
+        length >= phoneMinLength && length <= phoneMaxLength;
+    final bool startingDigitsValid = startingDigits.isEmpty ||
+        startingDigits.any((digits) => phoneNumber.startsWith(digits));
+    return lengthValid && startingDigitsValid;
+  }
+
+  Widget getFlag({double? size}) {
+    final firstLetter = countryCode.codeUnitAt(0) - 0x41 + 0x1F1E6;
+    final secondLetter = countryCode.codeUnitAt(1) - 0x41 + 0x1F1E6;
+    final emojiCountyCode =
+        String.fromCharCode(firstLetter) + String.fromCharCode(secondLetter);
+    return Text(
+      countryCode == 'WW' ? '\uD83C\uDF0D' : emojiCountyCode,
+      style: TextStyle(fontSize: size ?? 25),
+    );
+  }
 }
