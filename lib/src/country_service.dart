@@ -4,8 +4,7 @@ import 'country.dart';
 import 'res/country_codes.dart';
 
 class CountryService {
-  static final List<Country> _countries =
-      countryCodes.map((country) => Country.from(json: country)).toList();
+  static final List<Country> _countries = countryCodes.map((country) => Country.from(json: country)).toList();
 
   // Private constructor to prevent instantiation
   CountryService._();
@@ -17,8 +16,7 @@ class CountryService {
       return _countries;
     }
 
-    final prioritizedCodes =
-        prioritizedCountryCodes.map((code) => code.toUpperCase()).toList();
+    final prioritizedCodes = prioritizedCountryCodes.map((code) => code.toUpperCase()).toList();
 
     final prioritized = <Country>[];
     final others = <Country>[];
@@ -33,8 +31,7 @@ class CountryService {
 
     // Sort prioritized countries by the order they appear in prioritizedCountryCodes
     prioritized.sort((a, b) {
-      return prioritizedCodes.indexOf(a.countryCode) -
-          prioritizedCodes.indexOf(b.countryCode);
+      return prioritizedCodes.indexOf(a.countryCode) - prioritizedCodes.indexOf(b.countryCode);
     });
 
     return [...prioritized, ...others];
@@ -43,8 +40,7 @@ class CountryService {
   ///Returns the first country that match the given code.
   static Country? findByCode(String? code) {
     final uppercaseCode = code?.toUpperCase();
-    return _countries
-        .firstWhereOrNull((country) => country.countryCode == uppercaseCode);
+    return _countries.firstWhereOrNull((country) => country.countryCode == uppercaseCode);
   }
 
   ///Returns the first country that match the given name.
@@ -54,14 +50,12 @@ class CountryService {
 
   ///Returns the first country that match the given phone code.
   static Country? findByPhoneCode(String? phoneCode) {
-    return _countries
-        .firstWhereOrNull((country) => country.phoneCode == phoneCode);
+    return _countries.firstWhereOrNull((country) => country.phoneCode == phoneCode);
   }
 
   ///Returns a list with all the countries that match the given codes list.
   static List<Country> findCountriesByCode(List<String> codes) {
-    final List<String> uppercaseCodes =
-        codes.map((code) => code.toUpperCase()).toList();
+    final List<String> uppercaseCodes = codes.map((code) => code.toUpperCase()).toList();
     final List<Country> countries = [];
     for (final code in uppercaseCodes) {
       final Country? country = findByCode(code);
@@ -73,11 +67,10 @@ class CountryService {
   }
 
   static bool validatePhoneNumber(String phoneNumber, String dialCode) {
-    final Country? country = findByCode(dialCode);
+    final Country? country = findByPhoneCode(dialCode);
     if (country == null) return false;
     final int length = phoneNumber.length;
-    final bool lengthValid =
-        length >= country.phoneMinLength && length <= country.phoneMaxLength;
+    final bool lengthValid = length >= country.phoneMinLength && length <= country.phoneMaxLength;
     final bool startingDigitsValid = country.startingDigits.isEmpty ||
         country.startingDigits.any((digits) => phoneNumber.startsWith(digits));
     return lengthValid && startingDigitsValid;
